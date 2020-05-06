@@ -4,45 +4,45 @@ ruby '2.3.3'
 
 gem 'bundler', '>= 1.7.0'
 
-gem 'rails', '~> 4.2.0'
+gem 'rails', '~> 4.2.8'
 
 # Foundation
-gem 'foundation-rails', '~> 5.4.5'
-gem 'sass-rails', '~> 4.0.4'
+gem 'foundation-rails', '~> 5.4.5', '>= 5.4.5.0'
+gem 'sass-rails', '~> 4.0.5'
 gem 'compass-rails', '~> 2.0.0'
 gem 'font-awesome-sass'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails'
+gem 'coffee-rails', '>= 4.2.1'
 gem 'therubyracer', platforms: :ruby
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 3.1.4'
 gem 'bcrypt'
-gem 'mongoid-paperclip', require: 'mongoid_paperclip'
-gem 'mongoid-slug'
+gem 'mongoid-paperclip', '0.0.11'
+gem 'mongoid-slug', '>= 5.3.0'
 gem 'aws-sdk'
-gem 'aws-sdk-rails'
-gem 'mutations'
+gem 'aws-sdk-rails', '>= 1.0.1'
+gem 'mutations', '>= 0.8.0'
 gem 'rack-attack'
 gem 'impressionist'
 gem 'rack-cors', require: 'rack/cors'
-gem 'delayed_job_mongoid'
-gem 'delayed_job_shallow_mongoid'
-gem 'activejob_backport'
+gem 'delayed_job_mongoid', '>= 2.2.0'
+gem 'delayed_job_shallow_mongoid', '>= 1.1.0'
+gem 'activejob_backport', '>= 0.0.3'
 gem 'patron' # For searchKick
 gem 'elasticsearch', '~> 2' # The project doesn't use semver, so this should only be upgraded on the jump to elasticsearch 5
 gem 'searchkick', '~> 1.5.1' # Have to evaluate the breaking changes in https://github.com/ankane/searchkick/blob/master/CHANGELOG.md
-gem 'pundit'
+gem 'pundit', '>= 1.1.0'
 gem 'eventmachine'
 gem 'merit'
 gem 'gibbon', '~> 1.1.5'
-gem 'jsonapi-serializers', '~> 0.2.4'
-gem 'mongoid-history'
-gem 'mongoid_taggable'
+gem 'jsonapi-serializers', '~> 0.2.6'
+gem 'mongoid-history', '>= 0.6.0'
+gem 'mongoid_taggable', '>= 1.1.1'
 
-gem 'utf8-cleaner'
+gem 'utf8-cleaner', '>= 0.2.5'
 
 gem 'bson_ext'
-gem 'mongoid', '~>4.0.2'
-gem 'active_model_serializers'
+gem 'mongoid', '~> 4.0.2'
+gem 'active_model_serializers', '>= 0.10.4'
 
 # Asset management using bower
 # https://rails-assets.org/
@@ -63,14 +63,14 @@ source 'https://rails-assets.org' do
 end
 
 group :development, :test do
-  gem 'coveralls', require: false
-  gem 'quiet_assets'
+  gem 'coveralls', '>= 0.8.19', require: false
+  gem 'quiet_assets', '>= 1.1.0'
   gem 'better_errors'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.5.2'
   gem 'pry'
   gem 'pry-nav'
   gem 'launchy'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.8.0'
   gem 'faker'
 end
 
@@ -81,7 +81,7 @@ group :test do
   gem 'capybara-angular'
   gem 'poltergeist'
   gem 'phantomjs', '>= 1.8.1', :require => 'phantomjs/poltergeist'
-  gem 'simplecov'
+  gem 'simplecov', '>= 0.12.0'
   gem 'database_cleaner', '~> 1.3.0'
   gem 'vcr'
   gem 'webmock'
@@ -95,7 +95,7 @@ end
 
 group :production, :staging do
   gem 'thin'
-  gem 'exception_notification'
+  gem 'exception_notification', '>= 4.2.1'
   gem 'rails_12factor'
   # https://github.com/heroku/rack-timeout
   gem 'rack-timeout'
@@ -104,7 +104,7 @@ end
 #Used for static pages in /app/views/pages
 gem 'high_voltage'
 gem 'devise', '~> 4.2.0'
-gem 'rails_admin'
+gem 'rails_admin', '>= 0.8.1'
 gem 'ng-rails-csrf'
 
 # LETSENCRYPT
