@@ -79,7 +79,7 @@ group :test do
   gem 'smarf_doc'
   gem 'capybara'
   gem 'capybara-angular'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.5.1'
   gem 'phantomjs', '>= 1.8.1', :require => 'phantomjs/poltergeist'
   gem 'simplecov'
   gem 'database_cleaner', '~> 1.3.0'
@@ -104,7 +104,7 @@ end
 #Used for static pages in /app/views/pages
 gem 'high_voltage'
 gem 'devise', '~> 4.2.0'
-gem 'rails_admin'
+gem 'rails_admin', '>= 1.2.0'
 gem 'ng-rails-csrf'
 
 # LETSENCRYPT
