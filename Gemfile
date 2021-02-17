@@ -4,7 +4,7 @@ ruby '2.3.3'
 
 gem 'bundler', '>= 1.7.0'
 
-gem 'rails', '~> 4.2.0'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 
 # Foundation
 gem 'foundation-rails', '~> 5.4.5'
@@ -104,7 +104,7 @@ end
 #Used for static pages in /app/views/pages
 gem 'high_voltage'
 gem 'devise', '~> 4.2.0'
-gem 'rails_admin'
+gem 'rails_admin', '>= 2.0.0'
 gem 'ng-rails-csrf'
 
 # LETSENCRYPT
