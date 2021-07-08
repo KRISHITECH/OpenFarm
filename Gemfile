@@ -69,7 +69,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry'
   gem 'pry-nav'
-  gem 'launchy'
+  gem 'launchy', '>= 2.4.3'
   gem 'factory_girl_rails'
   gem 'faker'
 end
@@ -77,20 +77,20 @@ end
 group :test do
   gem 'test-unit'
   gem 'smarf_doc'
-  gem 'capybara'
-  gem 'capybara-angular'
-  gem 'poltergeist'
+  gem 'capybara', '>= 2.12.0'
+  gem 'capybara-angular', '>= 0.2.3'
+  gem 'poltergeist', '>= 1.5.1'
   gem 'phantomjs', '>= 1.8.1', :require => 'phantomjs/poltergeist'
   gem 'simplecov'
   gem 'database_cleaner', '~> 1.3.0'
   gem 'vcr'
-  gem 'webmock'
+  gem 'webmock', '>= 2.1.0'
 end
 
 group :development do
   gem 'rubocop'
   gem 'rainbow', '~> 2.1.0' # https://github.com/sickill/rainbow/issues/48
-  gem "letter_opener"
+  gem "letter_opener", ">= 1.4.1"
 end
 
 group :production, :staging do
