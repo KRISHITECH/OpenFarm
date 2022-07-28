@@ -4,11 +4,11 @@ ruby '2.3.3'
 
 gem 'bundler', '>= 1.7.0'
 
-gem 'rails', '~> 4.2.0'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 
 # Foundation
-gem 'foundation-rails', '~> 5.4.5'
-gem 'sass-rails', '~> 4.0.4'
+gem 'foundation-rails', '~> 5.4.5', '>= 5.4.5.0'
+gem 'sass-rails', '~> 4.0.5'
 gem 'compass-rails', '~> 2.0.0'
 gem 'font-awesome-sass'
 gem 'uglifier', '>= 1.3.0'
@@ -34,14 +34,14 @@ gem 'pundit'
 gem 'eventmachine'
 gem 'merit'
 gem 'gibbon', '~> 1.1.5'
-gem 'jsonapi-serializers', '~> 0.2.4'
+gem 'jsonapi-serializers', '~> 0.2.6'
 gem 'mongoid-history'
 gem 'mongoid_taggable'
 
 gem 'utf8-cleaner'
 
 gem 'bson_ext'
-gem 'mongoid', '~>4.0.2'
+gem 'mongoid', '~> 4.0.2'
 gem 'active_model_serializers'
 
 # Asset management using bower
@@ -104,7 +104,7 @@ end
 #Used for static pages in /app/views/pages
 gem 'high_voltage'
 gem 'devise', '~> 4.2.0'
-gem 'rails_admin'
+gem 'rails_admin', '>= 1.0.0'
 gem 'ng-rails-csrf'
 
 # LETSENCRYPT
