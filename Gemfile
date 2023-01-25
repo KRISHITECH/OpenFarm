@@ -4,17 +4,17 @@ ruby '2.3.3'
 
 gem 'bundler', '>= 1.7.0'
 
-gem 'rails', '~> 4.2.0'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.1'
 
 # Foundation
-gem 'foundation-rails', '~> 5.4.5'
-gem 'sass-rails', '~> 4.0.4'
+gem 'foundation-rails', '~> 5.4.5', '>= 5.4.5.0'
+gem 'sass-rails', '~> 5.0.8'
 gem 'compass-rails', '~> 2.0.0'
 gem 'font-awesome-sass'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails'
+gem 'coffee-rails', '>= 4.2.2'
 gem 'therubyracer', platforms: :ruby
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'bcrypt'
 gem 'mongoid-paperclip', require: 'mongoid_paperclip'
 gem 'mongoid-slug'
@@ -24,7 +24,7 @@ gem 'mutations'
 gem 'rack-attack'
 gem 'impressionist'
 gem 'rack-cors', require: 'rack/cors'
-gem 'delayed_job_mongoid'
+gem 'delayed_job_mongoid', '>= 2.3.1'
 gem 'delayed_job_shallow_mongoid'
 gem 'activejob_backport'
 gem 'patron' # For searchKick
@@ -34,15 +34,15 @@ gem 'pundit'
 gem 'eventmachine'
 gem 'merit'
 gem 'gibbon', '~> 1.1.5'
-gem 'jsonapi-serializers', '~> 0.2.4'
+gem 'jsonapi-serializers', '~> 0.2.6'
 gem 'mongoid-history'
 gem 'mongoid_taggable'
 
 gem 'utf8-cleaner'
 
 gem 'bson_ext'
-gem 'mongoid', '~>4.0.2'
-gem 'active_model_serializers'
+gem 'mongoid', '~> 7.0.12'
+gem 'active_model_serializers', '>= 0.10.12'
 
 # Asset management using bower
 # https://rails-assets.org/
@@ -95,7 +95,7 @@ end
 
 group :production, :staging do
   gem 'thin'
-  gem 'exception_notification'
+  gem 'exception_notification', '>= 4.4.0'
   gem 'rails_12factor'
   # https://github.com/heroku/rack-timeout
   gem 'rack-timeout'
@@ -103,8 +103,8 @@ end
 
 #Used for static pages in /app/views/pages
 gem 'high_voltage'
-gem 'devise', '~> 4.2.0'
-gem 'rails_admin'
+gem 'devise', '~> 4.7.0'
+gem 'rails_admin', '>= 2.0.0'
 gem 'ng-rails-csrf'
 
 # LETSENCRYPT
