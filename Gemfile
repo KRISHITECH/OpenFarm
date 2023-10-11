@@ -4,22 +4,22 @@ ruby '2.3.3'
 
 gem 'bundler', '>= 1.7.0'
 
-gem 'rails', '~> 4.2.0'
+gem 'rails', '~> 7.1.0'
 
 # Foundation
-gem 'foundation-rails', '~> 5.4.5'
-gem 'sass-rails', '~> 4.0.4'
+gem 'foundation-rails', '~> 5.5.0', '>= 5.5.0.0'
+gem 'sass-rails', '~> 5.0.8'
 gem 'compass-rails', '~> 2.0.0'
 gem 'font-awesome-sass'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails'
+gem 'coffee-rails', '>= 4.2.2'
 gem 'therubyracer', platforms: :ruby
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'bcrypt'
 gem 'mongoid-paperclip', require: 'mongoid_paperclip'
 gem 'mongoid-slug'
-gem 'aws-sdk'
-gem 'aws-sdk-rails'
+gem 'aws-sdk', '>= 2.0.22'
+gem 'aws-sdk-rails', '>= 2.0.0'
 gem 'mutations'
 gem 'rack-attack'
 gem 'impressionist'
@@ -42,7 +42,7 @@ gem 'utf8-cleaner'
 
 gem 'bson_ext'
 gem 'mongoid', '~>4.0.2'
-gem 'active_model_serializers'
+gem 'active_model_serializers', '>= 0.10.14'
 
 # Asset management using bower
 # https://rails-assets.org/
@@ -65,12 +65,12 @@ end
 group :development, :test do
   gem 'coveralls', require: false
   gem 'quiet_assets'
-  gem 'better_errors'
-  gem 'rspec-rails'
+  gem 'better_errors', '>= 2.3.0'
+  gem 'rspec-rails', '>= 3.6.0'
   gem 'pry'
   gem 'pry-nav'
   gem 'launchy'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.9.0'
   gem 'faker'
 end
 
@@ -95,7 +95,7 @@ end
 
 group :production, :staging do
   gem 'thin'
-  gem 'exception_notification'
+  gem 'exception_notification', '>= 4.5.0'
   gem 'rails_12factor'
   # https://github.com/heroku/rack-timeout
   gem 'rack-timeout'
@@ -103,8 +103,8 @@ end
 
 #Used for static pages in /app/views/pages
 gem 'high_voltage'
-gem 'devise', '~> 4.2.0'
-gem 'rails_admin'
+gem 'devise', '~> 4.7.0'
+gem 'rails_admin', '>= 3.0.0'
 gem 'ng-rails-csrf'
 
 # LETSENCRYPT
