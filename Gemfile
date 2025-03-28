@@ -4,11 +4,11 @@ ruby '2.3.3'
 
 gem 'bundler', '>= 1.7.0'
 
-gem 'rails', '~> 4.2.0'
+gem 'rails', '~> 7.0.0'
 
 # Foundation
-gem 'foundation-rails', '~> 5.4.5'
-gem 'sass-rails', '~> 4.0.4'
+gem 'foundation-rails', '~> 6.5.1', '>= 6.5.1.0'
+gem 'sass-rails', '~> 6.0.0'
 gem 'compass-rails', '~> 2.0.0'
 gem 'font-awesome-sass'
 gem 'uglifier', '>= 1.3.0'
@@ -18,7 +18,7 @@ gem 'jquery-rails'
 gem 'bcrypt'
 gem 'mongoid-paperclip', require: 'mongoid_paperclip'
 gem 'mongoid-slug'
-gem 'aws-sdk'
+gem 'aws-sdk', '>= 2.0.22'
 gem 'aws-sdk-rails'
 gem 'mutations'
 gem 'rack-attack'
@@ -95,7 +95,7 @@ end
 
 group :production, :staging do
   gem 'thin'
-  gem 'exception_notification'
+  gem 'exception_notification', '>= 5.0.0'
   gem 'rails_12factor'
   # https://github.com/heroku/rack-timeout
   gem 'rack-timeout'
@@ -104,7 +104,7 @@ end
 #Used for static pages in /app/views/pages
 gem 'high_voltage'
 gem 'devise', '~> 4.2.0'
-gem 'rails_admin'
+gem 'rails_admin', '>= 3.0.0'
 gem 'ng-rails-csrf'
 
 # LETSENCRYPT
