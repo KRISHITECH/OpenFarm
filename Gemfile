@@ -66,7 +66,7 @@ group :development, :test do
   gem 'coveralls', require: false
   gem 'quiet_assets'
   gem 'better_errors'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'pry'
   gem 'pry-nav'
   gem 'launchy'
