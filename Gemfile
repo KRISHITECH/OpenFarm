@@ -33,7 +33,7 @@ gem 'searchkick', '~> 1.5.1' # Have to evaluate the breaking changes in https://
 gem 'pundit'
 gem 'eventmachine'
 gem 'merit'
-gem 'gibbon', '~> 1.1.5'
+gem 'gibbon', '~> 2.0.0'
 gem 'jsonapi-serializers', '~> 0.2.4'
 gem 'mongoid-history'
 gem 'mongoid_taggable'
