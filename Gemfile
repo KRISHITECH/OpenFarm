@@ -16,32 +16,32 @@ gem 'coffee-rails'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'bcrypt'
-gem 'mongoid-paperclip', require: 'mongoid_paperclip'
-gem 'mongoid-slug'
+gem 'mongoid-paperclip', '>= 0.1.0', require: 'mongoid_paperclip'
+gem 'mongoid-slug', '>= 5.3.2'
 gem 'aws-sdk'
 gem 'aws-sdk-rails'
 gem 'mutations'
 gem 'rack-attack'
 gem 'impressionist'
 gem 'rack-cors', require: 'rack/cors'
-gem 'delayed_job_mongoid'
-gem 'delayed_job_shallow_mongoid'
+gem 'delayed_job_mongoid', '>= 2.3.1'
+gem 'delayed_job_shallow_mongoid', '>= 1.2.0'
 gem 'activejob_backport'
 gem 'patron' # For searchKick
-gem 'elasticsearch', '~> 2' # The project doesn't use semver, so this should only be upgraded on the jump to elasticsearch 5
-gem 'searchkick', '~> 1.5.1' # Have to evaluate the breaking changes in https://github.com/ankane/searchkick/blob/master/CHANGELOG.md
+gem 'elasticsearch', '~> 2', '>= 2.0.2' # The project doesn't use semver, so this should only be upgraded on the jump to elasticsearch 5
+gem 'searchkick', '~> 2.0.0' # Have to evaluate the breaking changes in https://github.com/ankane/searchkick/blob/master/CHANGELOG.md
 gem 'pundit'
 gem 'eventmachine'
 gem 'merit'
 gem 'gibbon', '~> 1.1.5'
 gem 'jsonapi-serializers', '~> 0.2.4'
-gem 'mongoid-history'
+gem 'mongoid-history', '>= 0.6.1'
 gem 'mongoid_taggable'
 
 gem 'utf8-cleaner'
 
 gem 'bson_ext'
-gem 'mongoid', '~>4.0.2'
+gem 'mongoid', '~> 7.6.1'
 gem 'active_model_serializers'
 
 # Asset management using bower
@@ -112,4 +112,4 @@ gem 'ng-rails-csrf'
 # of the Heroku API gem:
 gem 'platform-api', github: 'jalada/platform-api', branch: 'master'
 
-gem 'letsencrypt-rails-heroku', group: 'production'
+gem 'letsencrypt-rails-heroku', '>= 2.0.0', group: 'production'
